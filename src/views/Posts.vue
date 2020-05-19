@@ -55,14 +55,15 @@ export default {
     Post
   },
   data: function () {
-    return {
-      message: '',
-      posts: [],
-      users: [],
-      errors: [],
-      show_sidebar: Flags.sidebar.isEnabled()
-    }
-  },
+  return {
+    message: '',
+    posts: [],
+    users: [],
+    errors: [],
+    show_sidebar: Flags.sidebar.isEnabled(),
+    show_title: Flags.title.isEnabled()
+  }
+},
   created () {
     this.getPosts()
     this.getUsers()
